@@ -4,6 +4,9 @@
 $route = isset($_GET['route']) && !str_ends_with($_GET['route'], '.php') ? $_GET['route'] : 'index';
 $routeParts = explode('/', $route);
 
+echo $_GET['route']."<br/>";
+echo $route;
+
 // Check whether it is try to access assets folder or not
 if (strpos($routeParts[0], 'asset') === 0) {
     $file_path = __DIR__ . '/' . $route;

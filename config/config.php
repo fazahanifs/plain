@@ -1,6 +1,6 @@
 <?php
-$servername = "localhost";
+$servername = "localhost:3308";
 $username = "root";
 $password = "";
-$dbname = "just_test";
+$dbname = "TugasWAD_faza_1202210403";
 ?>

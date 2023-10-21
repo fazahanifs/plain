@@ -20,8 +20,7 @@ class User {
     }
 
     public function doRegister() {
-        $this->userDAO->insert($_POST['username'], $_POST['email'], $_POST['password']);
-        header('location:/user/showAll');
+        $this->userDAO->insert($_POST['username'], $_POST['email'], $_POST['password'], $_FILES['photo']['name']);
     }
 
     public function login() {
